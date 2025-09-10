@@ -12,16 +12,19 @@ int main(){
     std::cout << "Initial Lives: " << player_lives << std::endl;
 
     // Postfix increment
-    std::cout << "Score using postfix increment: " << player_score << std::endl;
+    std::cout << "Score using postfix increment: " << player_score++ << std::endl; 
+    
+    // prints 10 and THEN increases to 11
 
     // Prefix increment
-    std::cout << "Score using prefix increment: " << player_score << std::endl;
+    std::cout << "Score using prefix increment: " << ++player_score << std::endl;
+    // prints 12 because the value had been increased to 11.
 
     // Postfix decrement
-    std::cout << "Lives using postfix decrement: " << player_lives << std::endl;
+    std::cout << "Lives using postfix decrement: " << player_lives-- << std::endl;
 
     // Prefix decrement
-    std::cout << "Lives using prefix decrement: " << player_lives << std::endl;
+    std::cout << "Lives using prefix decrement: " << --player_lives << std::endl;
 
     std::cout << std::endl << std::endl;
     return 0;
