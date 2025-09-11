@@ -9,6 +9,13 @@ int main(){
     std::vector<int> lapTimes = {92, 85, 88, 90, 87};
     float average;
     
+    average = 0.0f;
+    for(int i = 0; i < lapTimes.size(); i++)
+        average += lapTimes[i]; // sum all the lap times
+    average /= lapTimes.size(); // divide by the number of lap times
+
+    std::cout << " Average Lap Time: " << average << std::endl;
+
     std::cout << std::endl << std::endl;
     return 0;
 }
