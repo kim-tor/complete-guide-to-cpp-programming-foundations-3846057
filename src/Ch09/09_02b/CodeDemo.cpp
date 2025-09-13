@@ -18,7 +18,13 @@ int main(){
     else{
         while (!inFile.eof()){
             getline(inFile, str);
-            std::cout << str << std::endl;
+            std::cout << str << " , ";
+            getline(inFile, str);
+            number = std::stoi(str); // Convert string to integer
+            std::cout << number << " , ";
+            getline(inFile, str);
+            letter = str[0]; // Get the first character of the string
+            std::cout << letter << std::endl;
         }
         inFile.close();
     }
